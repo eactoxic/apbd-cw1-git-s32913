@@ -29,9 +29,11 @@ class Program
 
         double average = GradeHelper.CalculateAverage(grades);
         int max = GradeHelper.CalculateMax(grades);
+        int min = GradeHelper.CalculateMin(grades);
 
         Console.WriteLine($"You entered {grades.Length} grades.");
         Console.WriteLine($"Average: {average}");
         Console.WriteLine($"Max: {max}");
+        Console.WriteLine($"Min: {min}");
     }
 }
