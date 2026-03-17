@@ -26,4 +26,10 @@ public static class GradeHelper
 
         return max;
     }
+
+    public static int CalculateMin(int[] values)
+    {
+        int min = values[0];
+        return min;
+    }
 }
