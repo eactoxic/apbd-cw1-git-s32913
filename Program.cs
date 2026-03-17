@@ -16,7 +16,17 @@ class Program
         }
 
         string[] parts = input.Split(',');
+        int[] grades = new int[parts.Length];
 
-        Console.WriteLine($"You entered {parts.Length} grades.");
+        for (int i = 0; i < parts.Length; i++)
+        {
+            if (!int.TryParse(parts[i].Trim(), out grades[i]))
+            {
+                Console.WriteLine("Invalid grade detected.");
+                return;
+            }
+        }
+
+        Console.WriteLine($"You entered {grades.Length} grades.");
     }
 }
